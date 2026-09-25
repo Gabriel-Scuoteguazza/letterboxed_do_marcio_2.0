@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar filme</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="editar">
+    <div class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Cine Club</p>
+          <h1>Editar filme</h1>
+        </div>
+        <a class="btn btn-secondary" href="index.html">Voltar ao catálogo</a>
+      </header>
+
+      <main class="content">
+        <div class="form-card">
+          <div class="form-header">
+            <p class="eyebrow">Atualizar</p>
+            <h2>Alterar informações do título</h2>
+          </div>
+
+          <form id="form-editar">
+            <div class="form-grid">
+              <div class="field full">
+                <label for="nomeDoFilme">Nome do filme</label>
+                <input id="nomeDoFilme" name="nomeDoFilme" type="text" placeholder="Nome do filme" required />
+              </div>
+
+              <div class="field">
+                <label for="genero">Gênero</label>
+                <input id="genero" name="genero" type="text" placeholder="Gênero" required />
+              </div>
+
+              <div class="field">
+                <label for="duracao">Duração (minutos)</label>
+                <input id="duracao" name="duracao" type="number" min="1" placeholder="Duração" required />
+              </div>
+
+              <div class="field full">
+                <label for="classificacao">Classificação indicativa</label>
+                <select id="classificacao" name="classificacao" required>
+                  <option value="">Selecione</option>
+                  <option value="L">L</option>
+                  <option value="10">10</option>
+                  <option value="12">12</option>
+                  <option value="14">14</option>
+                  <option value="16">16</option>
+                  <option value="18">18</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <a class="back-link" href="index.html">Cancelar</a>
+              <button class="btn btn-primary" type="submit">Salvar alterações</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

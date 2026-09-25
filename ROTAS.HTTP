@@ -1,0 +1,27 @@
+GET http://localhost:3955/filmes
+
+###
+POST http://localhost:3955/adicionar-filme
+Content-Type: application/json
+
+{
+    "nomeDoFilme": "Assassinos da Lua das Flores",
+    "genero": "Faroeste/Thriller",
+    "duracao": "326",
+    "classificacao": "16 anos"
+}
+
+
+###
+DELETE http://localhost:3955/apagar-filme/6
+
+###
+PUT http://localhost:3955/editar-filme/7
+Content-Type: application/json
+
+{
+    "nomeDoFilme": "Cães de Aluguel",
+    "genero": "Thriller/Crime",
+    "duracao": "139",
+    "classificacao": "18 anos" 
+}
