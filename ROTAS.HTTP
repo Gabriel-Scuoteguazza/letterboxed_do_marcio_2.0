@@ -1,7 +1,7 @@
-GET http://localhost:3955/filmes
+GET https://letterboxed-do-marcio-2-0.vercel.app/filmes
 
 ###
-POST http://localhost:3955/adicionar-filme
+POST https://letterboxed-do-marcio-2-0.vercel.app/adicionar-filme
 Content-Type: application/json
 
 {
@@ -13,10 +13,10 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:3955/apagar-filme/6
+DELETE https://letterboxed-do-marcio-2-0.vercel.app/apagar-filme/6
 
 ###
-PUT http://localhost:3955/editar-filme/7
+PUT https://letterboxed-do-marcio-2-0.vercel.app/editar-filme/7
 Content-Type: application/json
 
 {
